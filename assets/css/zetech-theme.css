@@ -1,0 +1,388 @@
+/* Zetech University Color Theme */
+:root {
+    /* Primary Color - User Specified rgb(6, 25, 67) */
+    --primary-color: rgb(6, 25, 67);
+    --primary-color-light: rgba(6, 25, 67, 0.8);
+    --primary-color-dark: rgba(6, 25, 67, 1);
+    
+    /* Secondary Colors */
+    --secondary-rich-black: #000000;
+    --secondary-cool-gray: #8C92AC;
+    --secondary-sky-blue: rgba(6, 25, 67, 0.7);
+    
+    /* Accent Colors */
+    --accent-brown: #543D21;
+    --accent-sienna: #A01705;
+    --accent-umber: #9E7369;
+    --accent-coral: #E63C64;
+    --accent-olive: #8A8542;
+    --accent-mustard: rgb(6, 25, 67);
+    
+    /* Neutral Colors */
+    --neutral-gray: #546E7A;
+    --light-bg: #FFF8E1;
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
+}
+
+/* Global Button Styles */
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-color-light));
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--secondary-rich-black), var(--primary-color));
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(6, 25, 67, 0.3);
+}
+
+.btn-secondary {
+    background: var(--secondary-cool-gray);
+    border: none;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-success {
+    background: var(--accent-olive);
+    border: none;
+}
+
+.btn-success:hover {
+    background: var(--accent-brown);
+}
+
+.btn-danger {
+    background: var(--accent-sienna);
+    border: none;
+}
+
+.btn-danger:hover {
+    background: #8B1404;
+}
+
+.btn-warning {
+    background: var(--primary-color);
+    border: none;
+    color: white;
+}
+
+.btn-warning:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Outline Button Styles */
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.btn-outline-secondary {
+    border-color: var(--secondary-cool-gray);
+    color: var(--secondary-cool-gray);
+}
+
+.btn-outline-secondary:hover {
+    background: var(--secondary-cool-gray);
+    border-color: var(--secondary-cool-gray);
+    color: white;
+}
+
+/* Navigation Styles */
+.navbar-brand {
+    color: var(--primary-color) !important;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+    color: var(--primary-color) !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--secondary-sky-blue) !important;
+    background: rgba(6, 25, 67, 0.1);
+    border-radius: 4px;
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(6, 25, 67, 0.25);
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Card Styles */
+.card {
+    border: 1px solid rgba(28, 29, 60, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(28, 29, 60, 0.15);
+    transform: translateY(-2px);
+}
+
+.card-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-sky-blue));
+    color: white;
+    border-bottom: none;
+}
+
+/* Alert Styles */
+.alert-primary {
+    background-color: rgba(6, 25, 67, 0.1);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.alert-success {
+    background-color: rgba(138, 85, 66, 0.1);
+    border-color: var(--accent-olive);
+    color: var(--accent-olive);
+}
+
+.alert-danger {
+    background-color: rgba(160, 23, 5, 0.1);
+    border-color: var(--accent-sienna);
+    color: var(--accent-sienna);
+}
+
+.alert-warning {
+    background-color: rgba(214, 197, 66, 0.1);
+    border-color: var(--accent-mustard);
+    color: var(--accent-brown);
+}
+
+/* Badge Styles */
+.badge-primary {
+    background-color: var(--primary-color);
+}
+
+.badge-secondary {
+    background-color: var(--secondary-cool-gray);
+}
+
+.badge-success {
+    background-color: var(--accent-olive);
+}
+
+.badge-danger {
+    background-color: var(--accent-sienna);
+}
+
+.badge-warning {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Link Styles */
+a {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-sky-blue);
+    text-decoration: none;
+}
+
+/* Text Colors */
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-secondary {
+    color: var(--secondary-cool-gray) !important;
+}
+
+.text-success {
+    color: var(--accent-olive) !important;
+}
+
+.text-danger {
+    color: var(--accent-sienna) !important;
+}
+
+.text-warning {
+    color: var(--primary-color) !important;
+}
+
+.alert-warning {
+    background-color: rgba(6, 25, 67, 0.08);
+    border-color: rgba(6, 25, 67, 0.2);
+    color: var(--primary-color);
+}
+
+/* Background Colors */
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-cool-gray) !important;
+}
+
+.bg-success {
+    background-color: var(--accent-olive) !important;
+}
+
+.bg-danger {
+    background-color: var(--accent-sienna) !important;
+}
+
+.bg-warning {
+    background-color: var(--primary-color) !important;
+}
+
+/* Border Colors */
+.border-primary {
+    border-color: var(--primary-color) !important;
+}
+
+.border-secondary {
+    border-color: var(--secondary-cool-gray) !important;
+}
+
+/* Table Styles */
+.table-primary {
+    background-color: rgba(28, 29, 60, 0.1);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(28, 29, 60, 0.05);
+}
+
+/* Progress Bar */
+.progress-bar {
+    background-color: var(--primary-color);
+}
+
+/* Pagination */
+.page-link {
+    color: var(--primary-color);
+}
+
+.page-link:hover {
+    color: var(--secondary-sky-blue);
+    background-color: rgba(6, 25, 67, 0.1);
+    border-color: var(--primary-color);
+}
+
+.page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Dropdown */
+.dropdown-item:hover {
+    background-color: rgba(6, 25, 67, 0.1);
+    color: var(--primary-color);
+}
+
+/* Modal */
+.modal-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-sky-blue));
+    color: white;
+    border-bottom: none;
+}
+
+.modal-footer .btn-primary {
+    background: var(--primary-color);
+}
+
+/* Spinner/Loading */
+.spinner-border-primary {
+    color: var(--primary-color);
+}
+
+/* Custom Zetech Components */
+.zetech-gradient {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-sky-blue));
+}
+
+.zetech-shadow {
+    box-shadow: 0 4px 12px rgba(28, 29, 60, 0.15);
+}
+
+.zetech-border {
+    border: 2px solid var(--primary-color);
+}
+
+.zetech-hover:hover {
+    background: rgba(28, 29, 60, 0.1);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+/* Payment Method Styles */
+.payment-method {
+    border: 2px solid var(--secondary-cool-gray);
+    transition: all 0.3s ease;
+}
+
+.payment-method:hover,
+.payment-method.selected {
+    border-color: var(--primary-color);
+    background: rgba(6, 25, 67, 0.05);
+}
+
+/* Product Card Enhancements */
+.product-card {
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(28, 29, 60, 0.15);
+}
+
+.price-current {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.price-original {
+    color: var(--secondary-cool-gray);
+    text-decoration: line-through;
+}
+
+/* Footer Styles */
+.footer {
+    background: var(--primary-color);
+    color: white;
+}
+
+.footer a {
+    color: var(--secondary-sky-blue);
+}
+
+.footer a:hover {
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .zetech-hover:hover {
+        transform: none;
+    }
+}

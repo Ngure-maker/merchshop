@@ -1,0 +1,1 @@
+session_test|i:1768826935;initialized|b:1;csrf_token|s:64:"bdd0e9d251d027f6b33e7ca6a48fc7076fbebf75a774d524b0209caee9b79785";cart|a:0:{}guest_cart|a:0:{}guest_order_ids|a:4:{i:0;i:40;i:1;i:41;i:2;i:47;i:3;i:49;}simulation_mode|b:0;checkout_request_id|s:7:"Q2N4V5Y";merchant_request_id|s:36:"aa57ac69-df68-47eb-aad2-45e6b574b27c";order_id|s:2:"49";payment_method|s:5:"mpesa";
